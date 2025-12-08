@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Our Story - Cream&Craft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="pencil-banner-div" id="pencil-banner-div">
+                <pencil-banner class="pencil-banner">
+                    <p class="pencil-banner-text">Fall flavors available now!</p>
+                    <a href="" class="fall-leaves-icon-png-link">
+                        <img src="assets/icons/fall-leaves-logo.png" alt="fall leaves icon" class="fall-leaves-icon-png">
+                    </a>       
+                </pencil-banner>
+            </div>
+            <div class="header-nav-bar-div" id="header-nav-bar-div">
+                <!-- Логотип -->
+                <div class="header-nav-bar-logo-image-div">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="logo image" class="header-logo-image">
+                    </a>
+                </div>
+                
+                <!-- Бургер-меню для мобильных -->
+                <button class="burger-menu" id="burgerMenu" aria-label="Open menu">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                
+                <!-- Основная навигация (скрывается на мобильных) -->
+                <div class="header-nav-bar-nav-list-div desktop-only">
+                    <nav>
+                        <ul class="header-nav-bar-list">
+                            <li>
+                                <a href="index.html" id="header-nav-bar-link1" class="header-nav-bar-links">HOME</a>
+                            </li>
+                            <li>   
+                                <a href="shop.html" id="header-nav-bar-link2" class="header-nav-bar-links">SHOP</a>
+                            </li>
+                            <li>
+                                <a href="delivery.html" id="header-nav-bar-link3" class="header-nav-bar-links">DELIVERY</a>
+                            </li>
+                            <li>
+                                <a href="reviews.html" id="header-nav-bar-link4" class="header-nav-bar-links">REVIEWS</a>
+                            </li>
+                            <li>
+                                <a href="ourstory.html" id="header-nav-bar-link6" class="header-nav-bar-links">OUR STORY</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Полная панель навигации (скрывается на мобильных) -->
+                <div class="header-nav-bar-second-nav desktop-only">
+                    <a href="#">
+                        <img src="assets/icons/search.png" alt="search icon" class="search-icon-png">
+                    </a>
+                    <a href="#" class="header-nav-bar-second-nav-rewards">Rewards</a>
+                    <a href="#" class="cart-link">
+                        <img src="assets/icons/cart.png" alt="cart icon" class="cart-icon-png">
+                        <span class="cart-count" id="desktopCartCount">0</span>
+                    </a>
+                </div>
+                
+                <!-- Иконки для мобильных (поиск и корзина) -->
+                <div class="header-nav-bar-second-nav mobile-only">
+                    <a href="#" class="mobile-search-btn">
+                        <img src="assets/icons/search.png" alt="search icon" class="search-icon-png">
+                    </a>
+                    <a href="#" class="mobile-cart-btn">
+                        <img src="assets/icons/cart.png" alt="cart icon" class="cart-icon-png">
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Упрощенное мобильное меню -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <button class="close-mobile-menu" id="closeMobileMenu">×</button>
+            <a href="index.html" class="mobile-menu-logo">
+                <img src="assets/logo.png" alt="logo" class="mobile-logo-image">
+            </a>
+        </div>
+        
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item">
+                    <a href="index.html" class="mobile-nav-link">HOME</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="shop.html" class="mobile-nav-link">SHOP</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="delivery.html" class="mobile-nav-link">DELIVERY</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="reviews.html" class="mobile-nav-link">REVIEWS</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="ourstory.html" class="mobile-nav-link">OUR STORY</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main class="main-content">
+        <!-- Герой-секция -->
+        <section class="story-hero-section">
+            <div class="story-hero-content">
+                <img src="assets/icons/blossom.png" alt="blossom icon" class="story-blossom-icon">
+                <h1 class="story-hero-title">OUR STORY</h1>
+                <img src="assets/icons/blossom.png" alt="blossom icon" class="story-blossom-icon">
+            </div>
+            <div class="story-hero-subtitle">
+                <h2>Where Passion Meets Craftsmanship</h2>
+            </div>
+        </section>
+
+        <!-- Блок WHO WE ARE -->
+        <section class="story-who-we-are">
+            <div class="story-content-block">
+                <div class="story-text-section">
+                    <div class="story-decorative">
+                        <img src="assets/icons/blossom.png" alt="blossom icon" class="story-small-blossom">
+                        <h3>WHO WE ARE</h3>
+                        <img src="assets/icons/blossom.png" alt="blossom icon" class="story-small-blossom">
+                    </div>
+                    <div class="story-description">
+                        <p>We are a creative-led, community-spirited company on a mission to make better ice cream and bring people together.</p>
+                        <p>Founded with a simple idea—that ice cream should be an experience, not just a dessert—we've grown from a small kitchen experiment to one of the most beloved ice cream brands in the country.</p>
+                    </div>
+                </div>
+                <div class="story-image-section">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=800&fit=crop" alt="Our team making ice cream" class="story-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок A NEW STANDARD IN ICE CREAM -->
+        <section class="story-standards">
+            <div class="story-content-block reversed">
+                <div class="story-image-section">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=800&fit=crop" alt="Ice cream craftsmanship" class="story-image">
+                </div>
+                <div class="story-text-section">
+                    <div class="story-decorative">
+                        <img src="assets/icons/blossom.png" alt="blossom icon" class="story-small-blossom">
+                        <h3>A NEW STANDARD IN ICE CREAM</h3>
+                        <img src="assets/icons/blossom.png" alt="blossom icon" class="story-small-blossom">
+                    </div>
+                    <div class="story-description">
+                        <p>We build ice cream completely from scratch using a unique recipe honed and perfected over more than 30 years by our founder Jeni Britton. Our ice creams have a uniquely smooth texture and incredible richness, with bright cream and clean flavors.</p>
+                        <p>We're here to set new standards for ice cream classics and to create our own, fresh, delicious, and Thai flavors inspired by our curiosities—art, history, pop culture, and beyond—that simply don't exist anywhere else.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок OUR REACH -->
+        <section class="story-reach">
+            <div class="story-reach-content">
+                <div class="story-decorative-center">
+                    <img src="assets/icons/blossom.png" alt="blossom icon" class="story-small-blossom">
+                    <h3>OUR REACH</h3>
+                    <img src="assets/icons/blossom.png" alt="blossom icon" class="story-small-blossom">
+                </div>
+                <div class="reach-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Scoop Shops Nationwide</div>
+                        <p>From coast to coast, our scoop shops serve smiles in every community</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Grocery Partners</div>
+                        <p>Available in major grocery stores across the country</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Team Members</div>
+                        <p>A dedicated family passionate about creating joy</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1M+</div>
+                        <div class="stat-label">Happy Customers Monthly</div>
+                        <p>Spreading joy one scoop at a time</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок OUR VALUES -->
+        <section class="story-values">
+            <div class="story-values-content">
+                <div class="story-decorative-center">
+                    <img src="assets/icons/blossom.png" alt="blossom icon" class="story-small-blossom">
+                    <h3>OUR VALUES</h3>
+                    <img src="assets/icons/blossom.png" alt="blossom icon" class="story-small-blossom">
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">🌱</div>
+                        <h4>Quality Ingredients</h4>
+                        <p>We source only the finest, sustainable ingredients from trusted farmers</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">❤️</div>
+                        <h4>Community Focus</h4>
+                        <p>We give back to the communities that support us through local initiatives</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">✨</div>
+                        <h4>Innovation</h4>
+                        <p>Constantly experimenting with new flavors and techniques</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🤝</div>
+                        <h4>Sustainability</h4>
+                        <p>Committed to eco-friendly packaging and responsible sourcing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Блок -->
+        <section class="story-cta">
+            <div class="story-cta-content">
+                <h2>JOIN OUR SWEET JOURNEY</h2>
+                <p>Experience the difference that passion, craftsmanship, and community can make in every scoop.</p>
+                <div class="story-cta-buttons">
+                    <a href="shop.html" class="story-cta-button primary" id="site-button">EXPLORE FLAVORS</a>
+                    <a href="#" class="story-cta-button secondary">FIND A SCOOP SHOP</a>
+                </div>
+                <div class="story-discount">
+                    <p><strong>35% off your first order</strong> when you sign up for our newsletter</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-upper">
+            <div class="footer-upper-content">
+                <h2>BE THE FIRST TO KNOW ABOUT NEW FLAVORS AND MORE</h2>
+                <div class="footer-form">
+                    <div class="form-group">
+                        <label>Your email</label>
+                        <input type="email" placeholder="name@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Birthday</label>
+                        <input type="text" placeholder="MM/DD/YYYY">
+                    </div>
+                    <button class="submit-btn">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-transition"></div>
+        <div class="footer-main">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>SHOP</h3>
+                    <ul>
+                        <li><a href="shop.html">All Flavors</a></li>
+                        <li><a href="shop.html">Collections</a></li>
+                        <li><a href="shop.html">Holiday Gifts</a></li>
+                        <li><a href="shop.html">Pint Club</a></li>
+                        <li><a href="shop.html">Merch</a></li>
+                        <li><a href="shop.html">Corporate Gifts</a></li>
+                        <li><a href="shop.html">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="story.html" class="active">Our Story</a></li>
+                        <li><a href="#">Jeni Britton</a></li>
+                        <li><a href="#">Join Our Team</a></li>
+                        <li><a href="#">Events & Catering</a></li>
+                        <li><a href="#">Fundraising</a></li>
+                        <li><a href="#">Scoop Shops</a></li>
+                        <li><a href="#">Franchising</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>CUSTOMER SERVICE</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="delivery.html">Shipping & Returns</a></li>
+                        <li><a href="#">Ingredients & Nutrition</a></li>
+                        <li><a href="#">Wholesale</a></li>
+                        <li><a href="delivery.html">The Delivery Box</a></li>
+                        <li><a href="shop.html">Flavor Vault</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>GIFTS</h3>
+                    <ul>
+                        <li><a href="shop.html">Birthday Gifts</a></li>
+                        <li><a href="shop.html">Thank You Gifts</a></li>
+                        <li><a href="shop.html">Holiday Gifts</a></li>
+                        <li><a href="shop.html">New Parent Gifts</a></li>
+                        <li><a href="shop.html">Pint Club Subscription</a></li>
+                        <li><a href="shop.html">Gift Cards</a></li>
+                        <li><a href="shop.html">Corporate Gifts</a></li>
+                        <li><a href="shop.html">Merch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Do Not Sell</a>
+                    <a href="#">Accessibility Statement</a>
+                    <a href="#">Cookie Settings</a>
+                    <a href="#">Chat With Our Team</a>
+                </div>
+                <div class="footer-copyright">
+                    ©2025 CREAM & CRAFT ICE CREAMS, LLC. ALL RIGHTS RESERVED
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

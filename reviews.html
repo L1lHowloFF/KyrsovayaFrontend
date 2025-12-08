@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Reviews - Cream&Craft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="pencil-banner-div" id="pencil-banner-div">
+                <pencil-banner class="pencil-banner">
+                    <p class="pencil-banner-text">Fall flavors available now!</p>
+                    <a href="" class="fall-leaves-icon-png-link">
+                        <img src="assets/icons/fall-leaves-logo.png" alt="fall leaves icon" class="fall-leaves-icon-png">
+                    </a>       
+                </pencil-banner>
+            </div>
+            <div class="header-nav-bar-div" id="header-nav-bar-div">
+                <!-- Логотип -->
+                <div class="header-nav-bar-logo-image-div">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="logo image" class="header-logo-image">
+                    </a>
+                </div>
+                
+                <!-- Бургер-меню для мобильных -->
+                <button class="burger-menu" id="burgerMenu" aria-label="Open menu">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                
+                <!-- Основная навигация (скрывается на мобильных) -->
+                <div class="header-nav-bar-nav-list-div desktop-only">
+                    <nav>
+                        <ul class="header-nav-bar-list">
+                            <li>
+                                <a href="index.html" id="header-nav-bar-link1" class="header-nav-bar-links">HOME</a>
+                            </li>
+                            <li>   
+                                <a href="shop.html" id="header-nav-bar-link2" class="header-nav-bar-links">SHOP</a>
+                            </li>
+                            <li>
+                                <a href="delivery.html" id="header-nav-bar-link3" class="header-nav-bar-links">DELIVERY</a>
+                            </li>
+                            <li>
+                                <a href="reviews.html" id="header-nav-bar-link4" class="header-nav-bar-links">REVIEWS</a>
+                            </li>
+                            <li>
+                                <a href="ourstory.html" id="header-nav-bar-link6" class="header-nav-bar-links">OUR STORY</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Полная панель навигации (скрывается на мобильных) -->
+                <div class="header-nav-bar-second-nav desktop-only">
+                    <a href="#">
+                        <img src="assets/icons/search.png" alt="search icon" class="search-icon-png">
+                    </a>
+                    <a href="#" class="header-nav-bar-second-nav-rewards">Rewards</a>
+                    <a href="#" class="cart-link">
+                        <img src="assets/icons/cart.png" alt="cart icon" class="cart-icon-png">
+                        <span class="cart-count" id="desktopCartCount">0</span>
+                    </a>
+                </div>
+                
+                <!-- Иконки для мобильных (поиск и корзина) -->
+                <div class="header-nav-bar-second-nav mobile-only">
+                    <a href="#" class="mobile-search-btn">
+                        <img src="assets/icons/search.png" alt="search icon" class="search-icon-png">
+                    </a>
+                    <a href="#" class="mobile-cart-btn">
+                        <img src="assets/icons/cart.png" alt="cart icon" class="cart-icon-png">
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Упрощенное мобильное меню -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <button class="close-mobile-menu" id="closeMobileMenu">×</button>
+            <a href="index.html" class="mobile-menu-logo">
+                <img src="assets/logo.png" alt="logo" class="mobile-logo-image">
+            </a>
+        </div>
+        
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item">
+                    <a href="index.html" class="mobile-nav-link">HOME</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="shop.html" class="mobile-nav-link">SHOP</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="delivery.html" class="mobile-nav-link">DELIVERY</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="reviews.html" class="mobile-nav-link">REVIEWS</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="ourstory.html" class="mobile-nav-link">OUR STORY</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main class="main-content">
+        <!-- Герой-секция -->
+        <section class="reviews-hero-section">
+            <div class="reviews-hero-content">
+                <img src="assets/icons/blossom.png" alt="blossom icon" class="reviews-blossom-icon">
+                <h1 class="reviews-hero-title">WHAT OUR CUSTOMERS SAY</h1>
+                <img src="assets/icons/blossom.png" alt="blossom icon" class="reviews-blossom-icon">
+            </div>
+            <div class="reviews-hero-subtitle">
+                <h2>Thousands of Happy Customers, One Delicious Mission</h2>
+            </div>
+        </section>
+
+        <!-- Статистика -->
+        <section class="reviews-stats-section">
+            <div class="reviews-stats-content">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">4.9</div>
+                        <div class="stat-stars">★★★★★</div>
+                        <div class="stat-label">Average Rating</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">Verified Reviews</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Would Recommend</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5M+</div>
+                        <div class="stat-label">Happy Scoops Served</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы пользователей -->
+        <section class="customer-reviews-section">
+            <div class="reviews-container">
+                <div class="reviews-decorative">
+                    <img src="assets/icons/blossom.png" alt="blossom icon" class="reviews-small-blossom">
+                    <h3>REAL CUSTOMER REVIEWS</h3>
+                    <img src="assets/icons/blossom.png" alt="blossom icon" class="reviews-small-blossom">
+                </div>
+                
+                <div class="reviews-grid">
+                    <!-- Отзыв 1 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">SR</div>
+                                <div class="reviewer-details">
+                                    <div class="reviewer-name">Sarah M.</div>
+                                    <div class="review-date">March 15, 2024</div>
+                                </div>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <div class="review-title">Best Ice Cream Ever!</div>
+                        <div class="review-text">
+                            "I've tried ice cream from all over the world, but Cream&Craft is something special. The Bay Leaf Cheesecake flavor is absolutely divine. It's become a weekly tradition for our family."
+                        </div>
+                        <div class="review-flavor">
+                            <span class="flavor-tag">Bay Leaf Cheesecake</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Отзыв 2 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">MJ</div>
+                                <div class="reviewer-details">
+                                    <div class="reviewer-name">Michael J.</div>
+                                    <div class="review-date">February 28, 2024</div>
+                                </div>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <div class="review-title">Perfect Gift!</div>
+                        <div class="review-text">
+                            "Ordered the Holiday Collection as a gift for my parents. They loved it! The packaging was beautiful and everything arrived perfectly frozen. Excellent customer service too."
+                        </div>
+                        <div class="review-flavor">
+                            <span class="flavor-tag">Holiday Collection</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Отзыв 3 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">ET</div>
+                                <div class="reviewer-details">
+                                    <div class="reviewer-name">Emily T.</div>
+                                    <div class="review-date">April 5, 2024</div>
+                                </div>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <div class="review-title">Game Changer</div>
+                        <div class="review-text">
+                            "The Salted Caramel flavor is the best I've ever had. Not too sweet, perfect salt balance. I've converted all my friends to Cream&Craft fans!"
+                        </div>
+                        <div class="review-flavor">
+                            <span class="flavor-tag">Salted Caramel</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Отзыв 4 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">RD</div>
+                                <div class="reviewer-details">
+                                    <div class="reviewer-name">Robert D.</div>
+                                    <div class="review-date">January 20, 2024</div>
+                                </div>
+                            </div>
+                            <div class="review-rating">★★★★☆</div>
+                        </div>
+                        <div class="review-title">Great for Parties</div>
+                        <div class="review-text">
+                            "Ordered the Family Pack for my daughter's birthday party. All the kids loved it, and the parents were impressed too. Will definitely order again for our next gathering."
+                        </div>
+                        <div class="review-flavor">
+                            <span class="flavor-tag">Family Pack</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Отзыв 5 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">LP</div>
+                                <div class="reviewer-details">
+                                    <div class="reviewer-name">Lisa P.</div>
+                                    <div class="review-date">March 3, 2024</div>
+                                </div>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <div class="review-title">Monthly Subscription Love</div>
+                        <div class="review-text">
+                            "I've been a Pint Club member for 6 months now. Every month brings new excitement. The quality is consistently excellent. Best subscription I've ever had!"
+                        </div>
+                        <div class="review-flavor">
+                            <span class="flavor-tag">Pint Club</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Отзыв 6 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">KB</div>
+                                <div class="reviewer-details">
+                                    <div class="reviewer-name">Kevin B.</div>
+                                    <div class="review-date">February 14, 2024</div>
+                                </div>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                        <div class="review-title">Perfect Valentine's Gift</div>
+                        <div class="review-text">
+                            "Surprised my wife with the Strawberry Cheesecake ice cream for Valentine's Day. She said it was the most romantic gift ever! The presentation was beautiful."
+                        </div>
+                        <div class="review-flavor">
+                            <span class="flavor-tag">Strawberry Cheesecake</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Кнопка "Load More" -->
+                <div class="reviews-load-more">
+                    <button class="load-more-reviews-btn" id="loadMoreReviews">Load More Reviews</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с фотоотзывами -->
+        <!-- Секция с фотоотзывами -->
+        <section class="photo-reviews-section">
+            <div class="photo-reviews-container">
+                <div class="photo-reviews-decorative">
+                    <img src="assets/icons/blossom.png" alt="blossom icon" class="reviews-small-blossom">
+                    <h3>SHARE YOUR CREAM&CRAFT MOMENTS</h3>
+                    <img src="assets/icons/blossom.png" alt="blossom icon" class="reviews-small-blossom">
+                </div>
+                
+                <div class="photo-reviews-grid">
+                    <div class="photo-review">
+                        <div class="photo-container">
+                            <img src="https://images.unsplash.com/photo-1532117182044-031e7cd916ee?w=600&h=400&fit=crop&crop=faces" alt="Birthday celebration" class="review-photo">
+                        </div>
+                        <div class="photo-caption">"Birthday celebration with Bay Leaf Cheesecake" - @sarah_icecream</div>
+                    </div>
+                    
+                    <div class="photo-review">
+                        <div class="photo-container">
+                            <img src="https://images.unsplash.com/photo-1516043827470-d52c543c438f?w=600&h=400&fit=crop" alt="Family tradition" class="review-photo">
+                        </div>
+                        <div class="photo-caption">"Our weekly family tradition" - @familyfun</div>
+                    </div>
+                    
+                    <div class="photo-review">
+                        <div class="photo-container">
+                            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&h=400&fit=crop" alt="Summer treat" class="review-photo">
+                        </div>
+                        <div class="photo-caption">"Perfect summer treat" - @summerlover</div>
+                    </div>
+                </div>
+                
+                <div class="share-your-moment">
+                    <p>Share your Cream&Craft moments on Instagram with <strong>#CreamCraftMoments</strong> for a chance to be featured!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция добавления отзыва -->
+        <section class="add-review-section">
+            <div class="add-review-container">
+                <div class="add-review-content">
+                    <h3>SHARE YOUR EXPERIENCE</h3>
+                    <p>We'd love to hear about your Cream&Craft journey!</p>
+                    
+                    <form class="review-form" id="reviewForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reviewerName">Your Name</label>
+                                <input type="text" id="reviewerName" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reviewerEmail">Your Email</label>
+                                <input type="email" id="reviewerEmail" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reviewRating">Rating</label>
+                            <div class="rating-stars-input">
+                                <span class="star" data-value="1">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="5">★</span>
+                            </div>
+                            <input type="hidden" id="reviewRating" value="5">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reviewFlavor">Favorite Flavor (Optional)</label>
+                            <select id="reviewFlavor">
+                                <option value="">Select a flavor</option>
+                                <option value="Bay Leaf Cheesecake">Bay Leaf Cheesecake</option>
+                                <option value="Salted Caramel">Salted Caramel</option>
+                                <option value="Strawberry Cheesecake">Strawberry Cheesecake</option>
+                                <option value="Chocolate Fudge Brownie">Chocolate Fudge Brownie</option>
+                                <option value="Vanilla Bean">Vanilla Bean</option>
+                                <option value="Mint Chocolate Chip">Mint Chocolate Chip</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reviewTitle">Review Title</label>
+                            <input type="text" id="reviewTitle" placeholder="Give your review a title" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reviewText">Your Review</label>
+                            <textarea id="reviewText" rows="5" placeholder="Tell us about your experience..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-review-btn">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-upper">
+            <div class="footer-upper-content">
+                <h2>BE THE FIRST TO KNOW ABOUT NEW FLAVORS AND MORE</h2>
+                <div class="footer-form">
+                    <div class="form-group">
+                        <label>Your email</label>
+                        <input type="email" placeholder="name@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Birthday</label>
+                        <input type="text" placeholder="MM/DD/YYYY">
+                    </div>
+                    <button class="submit-btn">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-transition"></div>
+        <div class="footer-main">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>SHOP</h3>
+                    <ul>
+                        <li><a href="shop.html">All Flavors</a></li>
+                        <li><a href="shop.html">Collections</a></li>
+                        <li><a href="shop.html">Holiday Gifts</a></li>
+                        <li><a href="shop.html">Pint Club</a></li>
+                        <li><a href="shop.html">Merch</a></li>
+                        <li><a href="shop.html">Corporate Gifts</a></li>
+                        <li><a href="shop.html">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="story.html">Our Story</a></li>
+                        <li><a href="#">Jeni Britton</a></li>
+                        <li><a href="#">Join Our Team</a></li>
+                        <li><a href="#">Events & Catering</a></li>
+                        <li><a href="#">Fundraising</a></li>
+                        <li><a href="#">Scoop Shops</a></li>
+                        <li><a href="#">Franchising</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>CUSTOMER SERVICE</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="delivery.html">Shipping & Returns</a></li>
+                        <li><a href="#">Ingredients & Nutrition</a></li>
+                        <li><a href="#">Wholesale</a></li>
+                        <li><a href="delivery.html">The Delivery Box</a></li>
+                        <li><a href="shop.html">Flavor Vault</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>CONNECT</h3>
+                    <ul>
+                        <li><a href="reviews.html" class="active">Customer Reviews</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Do Not Sell</a>
+                    <a href="#">Accessibility Statement</a>
+                    <a href="#">Cookie Settings</a>
+                    <a href="#">Chat With Our Team</a>
+                </div>
+                <div class="footer-copyright">
+                    ©2025 CREAM & CRAFT ICE CREAMS, LLC. ALL RIGHTS RESERVED
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="reviews.js"></script>
+</body>
+</html>

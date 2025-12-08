@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Shop - Cream&Craft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="pencil-banner-div" id="pencil-banner-div">
+                <pencil-banner class="pencil-banner">
+                    <p class="pencil-banner-text">Fall flavors available now!</p>
+                    <a href="" class="fall-leaves-icon-png-link">
+                        <img src="assets/icons/fall-leaves-logo.png" alt="fall leaves icon" class="fall-leaves-icon-png">
+                    </a>       
+                </pencil-banner>
+            </div>
+            <div class="header-nav-bar-div" id="header-nav-bar-div">
+                <!-- Логотип -->
+                <div class="header-nav-bar-logo-image-div">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="logo image" class="header-logo-image">
+                    </a>
+                </div>
+                
+                <!-- Бургер-меню для мобильных -->
+                <button class="burger-menu" id="burgerMenu" aria-label="Open menu">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                
+                <!-- Иконки для мобильных (поиск и корзина) -->
+                <div class="header-nav-bar-second-nav mobile-only">
+                    <a href="#" class="mobile-search-btn">
+                        <img src="assets/icons/search.png" alt="search icon" class="search-icon-png">
+                    </a>
+                    <a href="#" class="mobile-cart-btn">
+                        <img src="assets/icons/cart.png" alt="cart icon" class="cart-icon-png">
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </div>
+                
+                <!-- Основная навигация (скрывается на мобильных) -->
+                <div class="header-nav-bar-nav-list-div desktop-only">
+                    <nav>
+                        <ul class="header-nav-bar-list">
+                            <li>
+                                <a href="index.html" id="header-nav-bar-link1" class="header-nav-bar-links">HOME</a>
+                            </li>
+                            <li>   
+                                <a href="shop.html" id="header-nav-bar-link2" class="header-nav-bar-links">SHOP</a>
+                            </li>
+                            <li>
+                                <a href="delivery.html" id="header-nav-bar-link3" class="header-nav-bar-links">DELIVERY</a>
+                            </li>
+                            <li>
+                                <a href="reviews.html" id="header-nav-bar-link4" class="header-nav-bar-links">REVIEWS</a>
+                            </li>
+                            <li>
+                                <a href="#" id="header-nav-bar-link5" class="header-nav-bar-links">GIFT</a>
+                            </li>
+                            <li>
+                                <a href="story.html" id="header-nav-bar-link6" class="header-nav-bar-links">OUR STORY</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Полная панель навигации (скрывается на мобильных) -->
+                <div class="header-nav-bar-second-nav desktop-only">
+                    <a href="#">
+                        <img src="assets/icons/search.png" alt="search icon" class="search-icon-png">
+                    </a>
+                    <a href="#" class="header-nav-bar-second-nav-rewards">Rewards</a>
+                    <button class="theme-switch" id="themeSwitch" aria-label="Toggle theme">
+                        <span class="theme-icon">🎨</span>
+                    </button>
+                    <a href="#" class="cart-link">
+                        <img src="assets/icons/cart.png" alt="cart icon" class="cart-icon-png">
+                        <span class="cart-count" id="desktopCartCount">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Упрощенное мобильное меню -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <button class="close-mobile-menu" id="closeMobileMenu">×</button>
+            <a href="index.html" class="mobile-menu-logo">
+                <img src="assets/logo.png" alt="logo" class="mobile-logo-image">
+            </a>
+        </div>
+        
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item">
+                    <a href="index.html" class="mobile-nav-link">HOME</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="shop.html" class="mobile-nav-link">SHOP</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="delivery.html" class="mobile-nav-link">DELIVERY</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="reviews.html" class="mobile-nav-link">REVIEWS</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#" class="mobile-nav-link">GIFT</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="story.html" class="mobile-nav-link">OUR STORY</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <div class="shop-container">
+            <!-- Боковая панель фильтров -->
+            <aside class="shop-sidebar">
+                <div class="filter-section">
+                    <h3 class="filter-title">FILTER BY</h3>
+                    
+                    <div class="filter-group">
+                        <h4 class="filter-subtitle">Category</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-checkbox" data-filter="category" value="pints">
+                                <span class="checkmark"></span>
+                                Pints
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-checkbox" data-filter="category" value="sandwiches">
+                                <span class="checkmark"></span>
+                                Sandwiches
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-checkbox" data-filter="category" value="cones">
+                                <span class="checkmark"></span>
+                                Cones
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-checkbox" data-filter="category" value="collections">
+                                <span class="checkmark"></span>
+                                Collections
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4 class="filter-subtitle">Flavor</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-checkbox" data-filter="flavor" value="chocolate">
+                                <span class="checkmark"></span>
+                                Chocolate
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-checkbox" data-filter="flavor" value="vanilla">
+                                <span class="checkmark"></span>
+                                Vanilla
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-checkbox" data-filter="flavor" value="fruit">
+                                <span class="checkmark"></span>
+                                Fruit
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-checkbox" data-filter="flavor" value="nut">
+                                <span class="checkmark"></span>
+                                Nut
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-checkbox" data-filter="flavor" value="seasonal">
+                                <span class="checkmark"></span>
+                                Seasonal
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4 class="filter-subtitle">Size</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-checkbox" data-filter="size" value="500ml">
+                                <span class="checkmark"></span>
+                                500ml
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-checkbox" data-filter="size" value="1l">
+                                <span class="checkmark"></span>
+                                1 Liter
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-checkbox" data-filter="size" value="single">
+                                <span class="checkmark"></span>
+                                Single Serve
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4 class="filter-subtitle">Price Range</h4>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-checkbox" data-filter="price" value="under-10">
+                                <span class="checkmark"></span>
+                                Under $10
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-checkbox" data-filter="price" value="10-20">
+                                <span class="checkmark"></span>
+                                $10 - $20
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-checkbox" data-filter="price" value="over-20">
+                                <span class="checkmark"></span>
+                                Over $20
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button class="clear-filters-btn" id="clearFilters">Clear All Filters</button>
+                </div>
+            </aside>
+            <!-- Основной контент с карточками товаров -->
+            <section class="shop-main">
+                <div class="shop-header">
+                    <h1 class="shop-title">OUR ICE CREAM COLLECTION</h1>
+                    <div class="shop-controls">
+                        <div class="sort-by">
+                            <label for="sortSelect">Sort by:</label>
+                            <select id="sortSelect" class="sort-select">
+                                <option value="featured">Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="name">Name A-Z</option>
+                                <option value="newest">Newest First</option>
+                            </select>
+                        </div>
+                        <div class="results-count">
+                            Showing <span id="resultsCount">12</span> products
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="products-grid" id="productsGrid">
+                    <!-- Карточки товаров будут добавляться через JavaScript -->
+                </div>
+                
+                <div class="load-more">
+                    <button class="load-more-btn" id="loadMore">Load More Products</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Корзина покупок (модальное окно) -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h3>Your Cart</h3>
+                <button class="close-cart" id="closeCart">×</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Товары в корзине будут добавляться через JavaScript -->
+                <div class="empty-cart">Your cart is empty</div>
+            </div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price" id="totalPrice">$0.00</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Полный футер -->
+    <footer>
+        <div class="footer-upper">
+            <div class="footer-upper-content">
+                <h2>BE THE FIRST TO KNOW ABOUT NEW FLAVORS AND MORE</h2>
+                <div class="footer-form">
+                    <div class="form-group">
+                        <label>Your email</label>
+                        <input type="email" placeholder="name@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Birthday</label>
+                        <input type="text" placeholder="MM/DD/YYYY">
+                    </div>
+                    <button class="submit-btn">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-transition"></div>
+        <div class="footer-main">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>SHOP</h3>
+                    <ul>
+                        <li><a href="shop.html">All Flavors</a></li>
+                        <li><a href="shop.html">Collections</a></li>
+                        <li><a href="shop.html">Holiday Gifts</a></li>
+                        <li><a href="shop.html">Pint Club</a></li>
+                        <li><a href="shop.html">Merch</a></li>
+                        <li><a href="shop.html">Corporate Gifts</a></li>
+                        <li><a href="shop.html">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="story.html">Our Story</a></li>
+                        <li><a href="#">Jeni Britton</a></li>
+                        <li><a href="#">Join Our Team</a></li>
+                        <li><a href="#">Events & Catering</a></li>
+                        <li><a href="#">Fundraising</a></li>
+                        <li><a href="#">Scoop Shops</a></li>
+                        <li><a href="#">Franchising</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>CUSTOMER SERVICE</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="delivery.html">Shipping & Returns</a></li>
+                        <li><a href="#">Ingredients & Nutrition</a></li>
+                        <li><a href="#">Wholesale</a></li>
+                        <li><a href="delivery.html">The Delivery Box</a></li>
+                        <li><a href="shop.html">Flavor Vault</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>GIFTS</h3>
+                    <ul>
+                        <li><a href="shop.html">Birthday Gifts</a></li>
+                        <li><a href="shop.html">Thank You Gifts</a></li>
+                        <li><a href="shop.html">Holiday Gifts</a></li>
+                        <li><a href="shop.html">New Parent Gifts</a></li>
+                        <li><a href="shop.html">Pint Club Subscription</a></li>
+                        <li><a href="shop.html">Gift Cards</a></li>
+                        <li><a href="shop.html">Corporate Gifts</a></li>
+                        <li><a href="shop.html">Merch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Do Not Sell</a>
+                    <a href="#">Accessibility Statement</a>
+                    <a href="#">Cookie Settings</a>
+                    <a href="#">Chat With Our Team</a>
+                </div>
+                <div class="footer-copyright">
+                    ©2025 CREAM & CRAFT ICE CREAMS, LLC. ALL RIGHTS RESERVED
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html>

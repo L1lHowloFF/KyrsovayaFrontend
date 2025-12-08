@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Delivery - Cream&Craft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="pencil-banner-div" id="pencil-banner-div">
+                <pencil-banner class="pencil-banner">
+                    <p class="pencil-banner-text">Fall flavors available now!</p>
+                    <a href="" class="fall-leaves-icon-png-link">
+                        <img src="assets/icons/fall-leaves-logo.png" alt="fall leaves icon" class="fall-leaves-icon-png">
+                    </a>       
+                </pencil-banner>
+            </div>
+            <div class="header-nav-bar-div" id="header-nav-bar-div">
+                <!-- Логотип -->
+                <div class="header-nav-bar-logo-image-div">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="logo image" class="header-logo-image">
+                    </a>
+                </div>
+                
+                <!-- Бургер-меню для мобильных -->
+                <button class="burger-menu" id="burgerMenu" aria-label="Open menu">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                
+                <!-- Иконки для мобильных (поиск и корзина) -->
+                <div class="header-nav-bar-second-nav mobile-only">
+                    <a href="#" class="mobile-search-btn">
+                        <img src="assets/icons/search.png" alt="search icon" class="search-icon-png">
+                    </a>
+                    <a href="#" class="mobile-cart-btn">
+                        <img src="assets/icons/cart.png" alt="cart icon" class="cart-icon-png">
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </div>
+                
+                <!-- Основная навигация (скрывается на мобильных) -->
+                <div class="header-nav-bar-nav-list-div desktop-only">
+                    <nav>
+                        <ul class="header-nav-bar-list">
+                            <li>
+                                <a href="index.html" id="header-nav-bar-link1" class="header-nav-bar-links">HOME</a>
+                            </li>
+                            <li>   
+                                <a href="shop.html" id="header-nav-bar-link2" class="header-nav-bar-links">SHOP</a>
+                            </li>
+                            <li>
+                                <a href="delivery.html" id="header-nav-bar-link3" class="header-nav-bar-links">DELIVERY</a>
+                            </li>
+                            <li>
+                                <a href="reviews.html" id="header-nav-bar-link4" class="header-nav-bar-links">REVIEWS</a>
+                            </li>
+                            <li>
+                                <a href="ourstory.html" id="header-nav-bar-link6" class="header-nav-bar-links">OUR STORY</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Полная панель навигации (скрывается на мобильных) -->
+                <div class="header-nav-bar-second-nav desktop-only">
+                    <a href="#">
+                        <img src="assets/icons/search.png" alt="search icon" class="search-icon-png">
+                    </a>
+                    <a href="#" class="header-nav-bar-second-nav-rewards">Rewards</a>
+                    <a href="#" class="cart-link">
+                        <img src="assets/icons/cart.png" alt="cart icon" class="cart-icon-png">
+                        <span class="cart-count" id="desktopCartCount">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Упрощенное мобильное меню -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <button class="close-mobile-menu" id="closeMobileMenu">×</button>
+            <a href="index.html" class="mobile-menu-logo">
+                <img src="assets/logo.png" alt="logo" class="mobile-logo-image">
+            </a>
+        </div>
+        
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item">
+                    <a href="index.html" class="mobile-nav-link">HOME</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="shop.html" class="mobile-nav-link">SHOP</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="delivery.html" class="mobile-nav-link">DELIVERY</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="reviews.html" class="mobile-nav-link">REVIEWS</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="ourstory.html" class="mobile-nav-link">OUR STORY</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <section class="delivery-section">
+            <div class="delivery-content">
+                <!-- Добавляем декоративные элементы как на главной -->
+                <div class="delivery-decorative">
+                    <img src="assets/icons/blossom.png" alt="blossom icon" class="delivery-blossom-icon">
+                    <h1 class="delivery-title">ALL FLAVORS</h1>
+                    <img src="assets/icons/blossom.png" alt="blossom icon" class="delivery-blossom-icon">
+                </div>
+                
+                <div class="delivery-text-block">
+                    <p class="delivery-description">Our order minimum is 5 pints. But after that it's up to you. Our boxes are designed to neatly hold up to 6, 9, or 18 pints.</p>
+                    
+                    <div class="delivery-features">
+                        <div class="feature-item">
+                            <strong>Guaranteed frozen delivery.</strong>
+                        </div>
+                        <div class="feature-item">
+                            <strong>Flat-rate shipping nationwide.</strong>
+                        </div>
+                        <div class="feature-item">
+                            <strong>Instagram-worthy unboxing.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="map-container">
+                <h2 class="map-title">Find Us Near You</h2>
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.177631294649!2d-74.00594908459418!3d40.71274377933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316e0b3b39%3A0xab1341028b7e7d5!2sIce%20Cream%20Shop!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="delivery-map">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-upper">
+            <div class="footer-upper-content">
+                <h2>BE THE FIRST TO KNOW ABOUT NEW FLAVORS AND MORE</h2>
+                <div class="footer-form">
+                    <div class="form-group">
+                        <label>Your email</label>
+                        <input type="email" placeholder="name@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Birthday</label>
+                        <input type="text" placeholder="MM/DD/YYYY">
+                    </div>
+                    <button class="submit-btn">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-transition"></div>
+        <div class="footer-main">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>SHOP</h3>
+                    <ul>
+                        <li><a href="shop.html">All Flavors</a></li>
+                        <li><a href="shop.html">Collections</a></li>
+                        <li><a href="shop.html">Holiday Gifts</a></li>
+                        <li><a href="shop.html">Pint Club</a></li>
+                        <li><a href="shop.html">Merch</a></li>
+                        <li><a href="shop.html">Corporate Gifts</a></li>
+                        <li><a href="shop.html">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="story.html">Our Story</a></li>
+                        <li><a href="#">Jeni Britton</a></li>
+                        <li><a href="#">Join Our Team</a></li>
+                        <li><a href="#">Events & Catering</a></li>
+                        <li><a href="#">Fundraising</a></li>
+                        <li><a href="#">Scoop Shops</a></li>
+                        <li><a href="#">Franchising</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>CUSTOMER SERVICE</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="delivery.html">Shipping & Returns</a></li>
+                        <li><a href="#">Ingredients & Nutrition</a></li>
+                        <li><a href="#">Wholesale</a></li>
+                        <li><a href="delivery.html">The Delivery Box</a></li>
+                        <li><a href="shop.html">Flavor Vault</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>GIFTS</h3>
+                    <ul>
+                        <li><a href="shop.html">Birthday Gifts</a></li>
+                        <li><a href="shop.html">Thank You Gifts</a></li>
+                        <li><a href="shop.html">Holiday Gifts</a></li>
+                        <li><a href="shop.html">New Parent Gifts</a></li>
+                        <li><a href="shop.html">Pint Club Subscription</a></li>
+                        <li><a href="shop.html">Gift Cards</a></li>
+                        <li><a href="shop.html">Corporate Gifts</a></li>
+                        <li><a href="shop.html">Merch</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Do Not Sell</a>
+                    <a href="#">Accessibility Statement</a>
+                    <a href="#">Cookie Settings</a>
+                    <a href="#">Chat With Our Team</a>
+                </div>
+                <div class="footer-copyright">
+                    ©2025 CREAM & CRAFT ICE CREAMS, LLC. ALL RIGHTS RESERVED
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Cream&Craft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="pencil-banner-div" id="pencil-banner-div">
+                <pencil-banner class="pencil-banner">
+                    <p class="pencil-banner-text">Fall flavors available now!</p>
+                    <a href="" class="fall-leaves-icon-png-link">
+                        <img src="assets/icons/fall-leaves-logo.png" alt="fall leaves icon" class="fall-leaves-icon-png">
+                    </a>       
+                </pencil-banner>
+            </div>
+            <div class="header-nav-bar-div" id="header-nav-bar-div">
+                <!-- Логотип -->
+                <div class="header-nav-bar-logo-image-div">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="logo image" class="header-logo-image">
+                    </a>
+                </div>
+                
+                <!-- Бургер-меню для мобильных -->
+                <button class="burger-menu" id="burgerMenu" aria-label="Open menu">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+                
+                <!-- Иконки для мобильных (поиск и корзина) -->
+                <div class="header-nav-bar-second-nav mobile-only">
+                    <a href="#" class="mobile-search-btn">
+                        <img src="assets/icons/search.png" alt="search icon" class="search-icon-png">
+                    </a>
+                    <a href="#" class="mobile-cart-btn">
+                        <img src="assets/icons/cart.png" alt="cart icon" class="cart-icon-png">
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </div>
+                
+                <!-- Основная навигация (скрывается на мобильных) -->
+                <div class="header-nav-bar-nav-list-div desktop-only">
+                    <nav>
+                        <ul class="header-nav-bar-list">
+                            <li>
+                                <a href="index.html" id="header-nav-bar-link1" class="header-nav-bar-links">HOME</a>
+                            </li>
+                            <li>   
+                                <a href="shop.html" id="header-nav-bar-link2" class="header-nav-bar-links">SHOP</a>
+                            </li>
+                            <li>
+                                <a href="delivery.html" id="header-nav-bar-link3" class="header-nav-bar-links">DELIVERY</a>
+                            </li>
+                            <li>
+                                <a href="reviews.html" id="header-nav-bar-link4" class="header-nav-bar-links">REVIEWS</a>
+                            </li>
+                            <li>
+                                <a href="ourstory.html" id="header-nav-bar-link6" class="header-nav-bar-links">OUR STORY</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Полная панель навигации (скрывается на мобильных) -->
+                <div class="header-nav-bar-second-nav desktop-only">
+                    <a href="#">
+                        <img src="assets/icons/search.png" alt="search icon" class="search-icon-png">
+                    </a>
+                    <a href="#" class="header-nav-bar-second-nav-rewards">Rewards</a>
+                    <a href="#" class="cart-link">
+                        <img src="assets/icons/cart.png" alt="cart icon" class="cart-icon-png">
+                        <span class="cart-count" id="desktopCartCount">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Упрощенное мобильное меню -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <button class="close-mobile-menu" id="closeMobileMenu">×</button>
+            <a href="index.html" class="mobile-menu-logo">
+                <img src="assets/logo.png" alt="logo" class="mobile-logo-image">
+            </a>
+        </div>
+        
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item">
+                    <a href="index.html" class="mobile-nav-link">HOME</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="shop.html" class="mobile-nav-link">SHOP</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="delivery.html" class="mobile-nav-link">DELIVERY</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="reviews.html" class="mobile-nav-link">REVIEWS</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="ourstory.html" class="mobile-nav-link">OUR STORY</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main class="main-content">
+        <section>
+            <div class="main-content-first-page-element">
+            <img src="assets/firsticecream.png" alt="ice cream image" class="first-ice-cream-image">
+            <div class="main-content-first-page-element-text-block">
+                <h4 class="main-content-first-page-element-text-block-h4">
+                    <span>Live, leaf, love</span>
+                </h4>
+                <h2 class="main-content-first-page-element-text-block-h2">
+                    <span class="main-content-first-page-element-text-block-h2-span">Bay Leaf Cheesecake</span>
+                </h2>
+                <h5 class="main-content-first-page-element-text-block-h5">
+                    <span class="main-content-first-page-element-text-block-h5">Back online! A tribute to our favorite little laurel. Tastes like a cool breeze whistling through a slice of cheesecake.</span>
+                </h5>
+                <div class="main-content-first-page-element-text-block-buttons">
+                    <a href="https://en.wikipedia.org/wiki/Ice_cream" class="main-content-first-page-element-text-block-buttons-first" id="site-button">TRY A TASTE</a>
+                    <br>
+                    <a href="https://en.wikipedia.org/wiki/Ice_cream_float" class="main-content-first-page-element-text-block-buttons-second">SHOP ALL FLAVORS</a>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="main-content-second-page-element">
+                <img src="assets/icons/blossom.png" alt="blossom icon" class="main-content-second-page-blossom-icon">
+                <h2 class="main-content-second-page-element-h2">Flavor is everything</h2>
+                <img src="assets/icons/blossom.png" alt="blossom icon" class="main-content-second-page-blossom-icon">
+            </div>
+            <div class="main-content-second-page-element-un1">
+                <h4 class="main-content-second-page-element-h4">We make unforgettable, crave-worthy flavors that bring people together.</h4>
+            </div>
+            <div class="main-content-second-page-element-button">
+                <a href="" class="main-content-second-page-element-button-first" id="site-button">EXPLORE THE FLAVORS</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="main-content-second-page-upper-slider-div">
+                <div class="main-content-second-page-upper-slider-div-upper">
+                    <h2 class="main-content-second-page-upper-slider-div-h2">ICE CREAM FOR EVERY <br> OCCASION</h2>
+                    <div class="main-content-second-page-upper-slider-div-upper-button">
+                        <a href="shop.html" class="main-content-second-page-upper-slider-div-button" id="site-button">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slider-track" id="sliderTrack">
+                    <!-- Карточки слайдера будут добавлены через JavaScript -->
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn" id="prevBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="slider-dots" id="sliderDots">
+                <!-- Точки будут добавлены через JavaScript -->
+                </div>
+                <button class="slider-btn next-btn" id="nextBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        </section>
+        
+        <section>
+            <div class="main-content-second-page-slider-carousel">
+                <div class="main-content-second-page-slider-carousel-first-slide">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-upper-menu">
+            <div class="footer-upper-menu-text">NEED CREAM & CRAFT NOW?</div>
+            <div class="footer-upper-menu-button-list">
+                <ul class="footer-upper-menu-button-list-ul">
+                    <div>
+                        <li class="footer-upper-menu-button-list-ul-li">LOCAL DELIVERY</li>
+                    </div>
+                    <div>
+                        <li class="footer-upper-menu-button-list-ul-li">SCOOP SHOPS</li>
+                    </div>
+                    <div>
+                        <li class="footer-upper-menu-button-list-ul-li">GROCERY LOCATOR</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-upper">
+            <div class="footer-upper-content">
+                <h2>BE THE FIRST TO KNOW ABOUT NEW FLAVORS AND MORE</h2>
+                <div class="footer-form">
+                    <div class="form-group">
+                        <label>Your email</label>
+                        <input type="email" placeholder="name@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Birthday</label>
+                        <input type="text" placeholder="MM/DD/YYYY">
+                    </div>
+                    <button class="submit-btn">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    <div class="footer-transition"></div>
+    <div class="footer-main">
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>SHOP</h3>
+                <ul>
+                    <li><a href="#">All Flavors</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Holiday Gifts</a></li>
+                    <li><a href="#">Pint Club</a></li>
+                    <li><a href="#">Merch</a></li>
+                    <li><a href="#">Corporate Gifts</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Jeni Britton</a></li>
+                    <li><a href="#">Join Our Team</a></li>
+                    <li><a href="#">Events & Catering</a></li>
+                    <li><a href="#">Fundraising</a></li>
+                    <li><a href="#">Scoop Shops</a></li>
+                    <li><a href="#">Franchising</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>CUSTOMER SERVICE</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Ingredients & Nutrition</a></li>
+                    <li><a href="#">Wholesale</a></li>
+                    <li><a href="#">The Delivery Box</a></li>
+                    <li><a href="#">Flavor Vault</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>GIFTS</h3>
+                <ul>
+                    <li><a href="#">Birthday Gifts</a></li>
+                    <li><a href="#">Thank You Gifts</a></li>
+                    <li><a href="#">Holiday Gifts</a></li>
+                    <li><a href="#">New Parent Gifts</a></li>
+                    <li><a href="#">Pint Club Subscription</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Corporate Gifts</a></li>
+                    <li><a href="#">Merch</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Do Not Sell</a>
+                <a href="#">Accessibility Statement</a>
+                <a href="#">Cookie Settings</a>
+                <a href="#">Chat With Our Team</a>
+            </div>
+            <div class="footer-copyright">
+                ©2025 CREAM & CRAFT ICE CREAMS, LLC. ALL RIGHTS RESERVED
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
