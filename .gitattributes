@@ -1,0 +1,15 @@
+# Основные языки проекта
+*.html linguist-language=HTML
+*.css linguist-language=CSS  
+*.js linguist-language=JavaScript
+
+# Игнорировать документы и картинки
+*.png linguist-documentation
+*.jpg linguist-documentation
+*.jpeg linguist-documentation
+*.gif linguist-documentation
+*.docx linguist-documentation
+*.pdf linguist-documentation
+
+# Игнорировать все файлы в папке media
+media/* linguist-documentation
